@@ -1,0 +1,716 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f2f4f7;
+  font-family: "Lexend", sans-serif;
+  z-index: -1000;
+}
+
+/* ----------NavBar---------- */
+
+.navbar {
+  display: flex;
+  /* width: 1440px; */
+  padding: 36px 140px;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  background: inherit;
+}
+
+/* ---------------------Media NavBar--------------- */
+
+@media screen and (max-width: 1300px) {
+  .navbar,
+  .navbar-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links li {
+    width: 50px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .navbar-button button {
+    padding: 2px;
+  }
+}
+
+.navbar-logo {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.slogan-container {
+  position: absolute;
+  bottom: 0;
+  left: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-slogan {
+  color: #1a89ec;
+  font-family: "Lexend";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.bottom-slogan {
+  color: #98a2b3;
+  font-family: Lexend;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  width: 130px;
+  padding: 12px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.navbar-links li a {
+  color: #667085;
+  font-family: "Lexend";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.list-item-arrow {
+  position: relative;
+}
+
+.arrow {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 2px;
+  margin-left: 5px;
+}
+
+.navbar-links li a:hover {
+  color: #344054;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Lexend";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-bottom: 1px solid #021e35;
+  padding-bottom: 4px;
+}
+
+.navbar-button button {
+  display: flex;
+  padding: 12px 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #e4e7ec;
+  background: #1a89ec;
+  color: #fcfcfd;
+  font-family: "Lexend";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+/* ----------Section Info Car------------ */
+
+section {
+  display: flex;
+  position: relative;
+  background-color: #fcfcfd;
+}
+
+.info-car {
+  /* width: 1440px; */
+  height: 877px;
+  background: #f2f4f7;
+  margin-left: 140px;
+}
+
+.description-car h1 {
+  width: 719px;
+  color: #344054;
+  font-family: "Lexend" sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 84px;
+}
+/* ----------------------Media Info Car-------------------------------- */
+@media screen and (max-width: 1300px) {
+  .description-car h1 {
+    width: 500px;
+    font-size: 45px;
+  }
+
+  .description-car .description {
+    width: 460px;
+    font-size: 20px;
+  }
+
+  .strip-blue {
+    display: none;
+  }
+}
+
+.description {
+  width: 660px;
+  color: #98a2b3;
+  font-family: "Lexend" sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 24px;
+}
+
+.search-container {
+  display: flex;
+  width: 459px;
+  height: 47px;
+  padding: 12px 0px 12px 0px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #e4e7ec;
+  background: #f9fafb;
+  margin-top: 25px;
+}
+
+.search-input {
+  flex: content;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-input::placeholder {
+  color: #d0d5dd;
+  font-family: Lexend;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.search-button {
+  background-color: #1a89ec;
+  border: none;
+  cursor: pointer;
+  width: 47px;
+  height: 47px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #fff;
+}
+
+.search-icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.model-series {
+  margin-top: 133px;
+  width: 351px;
+  color: #344054;
+  font-family: Lexend;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.grid-price-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 20px;
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+
+.grid-item h3 {
+  width: 83px;
+  color: #98a2b3;
+  font-family: "Lexend";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.grid-item p {
+  color: #667085;
+  font-family: "Lexend";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-weight: 0px;
+}
+
+.hr-container {
+  position: relative;
+  color: #98a2b3;
+}
+
+.circle-icon {
+  position: absolute;
+  top: 10px;
+  left: 555px;
+  width: 10px;
+  height: 10px;
+  color: #98a2b3;
+}
+
+.strip-blue {
+  width: 300px;
+  height: 1022px;
+  flex-shrink: 0;
+  background: rgba(26, 137, 236, 0.07);
+  z-index: 1;
+  position: absolute;
+  right: 299px;
+  top: -145px;
+}
+
+.blue-car {
+  flex-shrink: 0;
+  position: absolute;
+  left: 860px;
+  top: -90px;
+  transform: translate(-50%, 50%);
+}
+
+.icon-chevron-left {
+  position: absolute;
+  right: 480px;
+  top: 730px;
+  cursor: pointer;
+}
+
+.icon-chevron-right {
+  position: absolute;
+  right: 400px;
+  top: 730px;
+  cursor: pointer;
+}
+
+.btn {
+  color: #98a2b3;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.68px;
+  width: 138px;
+  height: 138px;
+  position: absolute;
+  top: 150px;
+  right: 400px;
+}
+
+.btn img {
+  position: absolute;
+  top: 82%;
+  right: 32%;
+}
+
+.btn span {
+  position: absolute;
+  right: -20%;
+  top: 95%;
+  transform-origin: 0 45px;
+  width: 90.262px;
+  height: 90.373px;
+  flex-shrink: 0;
+}
+.circle {
+  color: #98a2b3;
+  font-family: Lexend;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.68px;
+}
+
+/* ----------Section Mobil Social---------- */
+
+.mobile-social {
+  background: #fcfcfd;
+  padding-top: 72px;
+  height: 1001px;
+  padding-left: 140px;
+  display: block;
+}
+
+.mobile-social h4 {
+  padding-bottom: 32px;
+  color: #344054;
+  font-family: Lexend;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.card-info {
+  width: 1160px;
+  height: 399px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(2, 30, 53, 0.4) 0%,
+    rgba(0, 0, 0, 0.69) 59.31%,
+    #000 100%
+  );
+  border-radius: 30px;
+  position: relative;
+}
+
+.border-dotted {
+  width: 1096px;
+  height: 339px;
+  flex-shrink: 0;
+  border: 1px dashed #fcfcfd;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.card-info h5 {
+  padding-top: 157px;
+  padding-left: 52px;
+  color: #fcfcfd;
+  font-family: Lexend;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.card-info p {
+  width: 665px;
+  padding-left: 52px;
+  padding-top: 18px;
+  padding-bottom: 24px;
+  color: #fcfcfd;
+  font-family: Lexend;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.icon-button {
+  padding-left: 52px;
+}
+
+.buttons {
+  display: inline-flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 0 9px;
+  background: #344054;
+  color: #fcfcfd;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* ----------------Media Mobil Social------------------------ */
+@media screen and (max-width: 1300px) {
+  .card-info {
+    width: 750px;
+    height: 399px;
+  }
+
+  .border-dotted {
+    width: 700px;
+    height: 339px;
+  }
+
+  .card-info h4 {
+    font-size: 22px;
+  }
+
+  .mobile-social h4 {
+    font-size: 27px;
+  }
+  .about-info h3 {
+    font-size: 25px !important;
+  }
+  .about-info h4 {
+    font-size: 20px !important;
+  }
+
+  .about-info p {
+    font-size: 18px !important;
+  }
+
+  .about-info {
+    width: 560px;
+  }
+
+  .about-info-local {
+    padding: 0px;
+    margin: 0px;
+    display: block;
+  }
+}
+
+.about {
+  padding-top: 72px;
+  display: flex;
+  gap: 80px;
+}
+
+.about-info h3 {
+  color: #344054;
+  font-family: Lexend;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.about-info h4 {
+  color: #344054;
+  font-family: Lexend;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-info {
+  width: 560px;
+  color: #344054;
+  font-family: Lexend;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-info-local {
+  width: 500px;
+  /* height: 304px; */
+  border-radius: 30px;
+  background: #e3e6e9;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  /* justify-content: center;
+  align-items: center; */
+  margin: 20px;
+}
+
+.icon-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ------------------Footer----------------------- */
+
+.footer-info {
+  height: 606px;
+  flex-shrink: 0;
+  background-color: #021e35;
+}
+
+.bloc-info-footer {
+  display: flex;
+  /* justify-content: space-around; */
+  padding-top: 72px;
+}
+
+.footer-logo {
+  position: relative;
+  padding-left: 140px;
+}
+
+.slogan-container-footer {
+  position: absolute;
+  top: -1.5%;
+  left: 39%;
+}
+
+.top-slogan-footer {
+  color: #fcfcfd;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.bottom-slogan-footer {
+  color: #fcfcfd;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.bloc-social-media {
+  padding-top: 40px;
+}
+
+.info-footer {
+  width: 300px;
+  color: #fcfcfd;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 26px;
+}
+
+.icon-social-media {
+  display: flex;
+  list-style: none;
+  gap: 18px;
+}
+
+.list-vehicle,
+.purchase-advise,
+.service-customer {
+  display: flex;
+
+  gap: 10px;
+  padding-left: 50px;
+  color: #fcfcfd;
+  font-family: Lexend;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.list-information ul {
+  list-style: none;
+}
+
+.list-vehicle > ul > li:not(:first-child),
+.purchase-advise > ul > li:not(:first-child),
+.service-customer > ul > li:not(:first-child) {
+  padding-bottom: 27.73px;
+}
+
+.list-vehicle > ul > li:first-child,
+.purchase-advise > ul > li:first-child,
+.service-customer > ul > li:first-child {
+  color: #fcfcfd;
+  font-family: Lexend;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 38px;
+}
+
+.barre-hr {
+  width: 1340px;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.sub-footer {
+  display: flex;
+  padding-top: 51px;
+}
+
+.sub-footer p {
+  padding-left: 140px;
+  color: #fcfcfd;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.service-list {
+  list-style: none;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  display: flex;
+  padding-left: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.list-next {
+  list-style: none;
+  display: flex;
+  padding-left: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.service-list li a {
+  text-decoration: none;
+  color: #fcfcfd;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.list-next li a {
+  text-decoration: none;
+  color: #fcfcfd;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.bloc-list-next > ul > li:nth-child(2) {
+  padding-bottom: 5px;
+}
