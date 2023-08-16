@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/afbfdev/deploy-mapersive-test/static/css/main.7ba48611.css",
+    "main.js": "/afbfdev/deploy-mapersive-test/static/js/main.52d7a2b4.js",
+    "static/js/787.42bb8ef1.chunk.js": "/afbfdev/deploy-mapersive-test/static/js/787.42bb8ef1.chunk.js",
+    "static/media/car.png": "/afbfdev/deploy-mapersive-test/static/media/car.01fc5e84ef4f50f4437c.png",
+    "index.html": "/afbfdev/deploy-mapersive-test/index.html",
+    "main.7ba48611.css.map": "/afbfdev/deploy-mapersive-test/static/css/main.7ba48611.css.map",
+    "main.52d7a2b4.js.map": "/afbfdev/deploy-mapersive-test/static/js/main.52d7a2b4.js.map",
+    "787.42bb8ef1.chunk.js.map": "/afbfdev/deploy-mapersive-test/static/js/787.42bb8ef1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ba48611.css",
+    "static/js/main.52d7a2b4.js"
+  ]
+}
